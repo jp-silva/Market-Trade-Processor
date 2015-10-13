@@ -12,8 +12,8 @@ public class RestResponse<T> extends SimpleRestResponse implements Serializable 
 		this.data = data;
 	}
 
-	public static <T> RestResponse<T> getSuccessResponse(String message) {
-		return new RestResponse<T>("success", message, null);
+	public static <T> RestResponse<T> getSuccessResponse(String message, T data) {
+		return new RestResponse<T>("success", message, data);
 	}
 
 	public T getData() {
