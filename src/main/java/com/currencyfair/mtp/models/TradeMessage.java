@@ -58,7 +58,7 @@ public class TradeMessage implements Serializable {
 	}
 
 	public float getVolume() {
-		return amountSell + amountBuy;
+		return amountSell - amountBuy;
 	}
 
 	@Override
